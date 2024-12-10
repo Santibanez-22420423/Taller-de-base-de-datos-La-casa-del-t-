@@ -82,3 +82,11 @@ CREATE TABLE clasificaciones(
 	estado BIT,
 	imagen VARCHAR(250)
 )
+
+CREATE TABLE compras(
+	id_compra INTEGER IDENTITY(1,1) NOT NULL,
+	id_proveedor INTEGER NOT NULL,
+	fecha DATE NOT NULL,
+	metodo_pago VARCHAR(20),
+	fecha_entrega DATE
+)
