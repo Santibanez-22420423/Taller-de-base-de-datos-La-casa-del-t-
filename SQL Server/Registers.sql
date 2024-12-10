@@ -531,3 +531,87 @@ values('2', '3', 'Tarjeta');
 
 insert into ventas (id_cliente, id_trabajador, metodo_pago)
 values('10', '7', 'Tarjeta');
+
+--Registros tabla productos_ventas-----------------------------------------------------------------------------------------------------------------------------
+-- Registros actualizados con cantidad reducida
+INSERT INTO productos_ventas (id_venta, id_producto, cantidad, unitario)
+VALUES('1', '1', '1', '46');
+
+INSERT INTO productos_ventas (id_venta, id_producto, cantidad, unitario)
+VALUES('1', '10', '1', '85');
+
+INSERT INTO productos_ventas (id_venta, id_producto, cantidad, unitario)
+VALUES('1', '7', '1', '250');
+
+INSERT INTO productos_ventas (id_venta, id_producto, cantidad, unitario)
+VALUES('2', '2', '1', '89');
+
+INSERT INTO productos_ventas (id_venta, id_producto, cantidad, unitario)
+VALUES('2', '12', '2', '53');
+
+INSERT INTO productos_ventas (id_venta, id_producto, cantidad, unitario)
+VALUES('3', '4', '1', '95');
+
+INSERT INTO productos_ventas (id_venta, id_producto, cantidad, unitario)
+VALUES('3', '9', '1', '85');
+
+INSERT INTO productos_ventas (id_venta, id_producto, cantidad, unitario)
+VALUES('4', '8', '2', '270');
+
+INSERT INTO productos_ventas (id_venta, id_producto, cantidad, unitario)
+VALUES('5', '11', '1', '103');
+
+INSERT INTO productos_ventas (id_venta, id_producto, cantidad, unitario)
+VALUES('6', '15', '1', '80');
+
+INSERT INTO productos_ventas (id_venta, id_producto, cantidad, unitario)
+VALUES('6', '13', '1', '58');
+
+INSERT INTO productos_ventas (id_venta, id_producto, cantidad, unitario)
+VALUES('6', '3', '2', '138');
+
+INSERT INTO productos_ventas (id_venta, id_producto, cantidad, unitario)
+VALUES('6', '4', '1', '95');
+
+INSERT INTO productos_ventas (id_venta, id_producto, cantidad, unitario)
+VALUES('7', '10', '1', '85');
+
+INSERT INTO productos_ventas (id_venta, id_producto, cantidad, unitario)
+VALUES('8', '16', '1', '74');
+
+INSERT INTO productos_ventas (id_venta, id_producto, cantidad, unitario)
+VALUES('8', '9', '1', '85');
+
+INSERT INTO productos_ventas (id_venta, id_producto, cantidad, unitario)
+VALUES('9', '5', '2', '76');
+
+INSERT INTO productos_ventas (id_venta, id_producto, cantidad, unitario)
+VALUES('10', '7', '1', '250');
+
+INSERT INTO productos_ventas (id_venta, id_producto, cantidad, unitario)
+VALUES('10', '8', '1', '270');
+
+INSERT INTO productos_ventas (id_venta, id_producto, cantidad, unitario)
+VALUES('11', '2', '3', '89');
+
+INSERT INTO productos_ventas (id_venta, id_producto, cantidad, unitario)
+VALUES('11', '6', '1', '85');
+
+INSERT INTO productos_ventas (id_venta, id_producto, cantidad, unitario)
+VALUES('11', '11', '1', '103');
+
+INSERT INTO productos_ventas (id_venta, id_producto, cantidad, unitario)
+VALUES('11', '15', '2', '80');
+
+INSERT INTO productos_ventas (id_venta, id_producto, cantidad, unitario)
+VALUES('12', '1', '4', '46');
+
+INSERT INTO productos_ventas (id_venta, id_producto, cantidad, unitario)
+VALUES('13', '10', '1', '85');
+
+INSERT INTO productos_ventas (id_venta, id_producto, cantidad, unitario)
+VALUES('13', '12', '2', '53');
+
+INSERT INTO productos_ventas (id_venta, id_producto, cantidad, unitario)
+VALUES('13', '12', '2', '53');
+
