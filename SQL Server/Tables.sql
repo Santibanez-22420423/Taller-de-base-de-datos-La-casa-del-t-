@@ -154,3 +154,12 @@ CREATE TABLE productos_compras(
 	 unitario REAL NOT NULL,
 	 subtotal MONEY
 )
+
+--Creación de la tabla ventas---------------------------------------------------------------------------------------------------------------------------------------------------------------
+CREATE TABLE ventas(
+    id_venta INTEGER IDENTITY(1,1),
+	id_cliente INTEGER NOT NULL,
+	id_trabajador INTEGER NOT NULL,
+	fecha DATE NOT NULL,
+	metodo_pago VARCHAR(20)
+)
