@@ -125,3 +125,18 @@ ALTER TABLE clientes
 ADD CONSTRAINT chk_clientes_genero CHECK(genero = 'Masculino' OR genero = 'Femenino');
 
 exec sp_helpconstraint clientes;
+
+--Restricciones tabla productos_compras------------------------------------------------------------------------------------------------------------------------------------
+alter table productos_compras
+add constraint pk_productos_compras_id_producto_compra primary key (id_producto_compra);
+
+alter table productos_compras
+add constraint fk_productos_compras_id_producto foreign key (id_producto) references productos (id_producto);
+
+alter table productos_compras
+add constraint fk_productos_compras_id_compra foreign key (id_compra) references compras (id_compra);
+
+alter table productos_compras
+add constraint chk_productos_compras_cantidad check (cantidad >= 0);
+
+exec sp_helpconstraint productos_compras;
