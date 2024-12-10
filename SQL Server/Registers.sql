@@ -75,3 +75,34 @@ INSERT INTO proveedores(nombre, apellido_paterno, apellido_materno, telefono, em
 	codigo_postal, URL_sitio_web, nombre_compañia, estatus)
 VALUES('Luis', 'Torres', 'Díaz', '3318148007', 'shananaturals@gmail.com', 'Av. Tabachines', '3514', 'Loma Bonita Ejidal', 'Zapopan', 'Jalisco',
 	'México', '45085', 'https://shanaturals.com/?srsltid=AfmBOoo-JcPW9la_VOsdTdUhcregxIOhk_x6s7SUk1hr3ALKFJuRnBEP', 'Shananaturals', '1');
+
+--Registros de la tabla jornadas (days)----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+INSERT INTO jornadas(hora_inicio, hora_fin, duracion, tipo, estado, descanso)
+VALUES('9:00', '14:30', '5.5', 'Matutino', 'Completo', '0.0');
+
+INSERT INTO jornadas(hora_inicio, hora_fin, duracion, tipo, estado, descanso)
+VALUES('16:30', '20:00', '3.5', 'Vespertino', 'Completo', '10.0');
+
+INSERT INTO jornadas(hora_inicio, hora_fin, duracion, tipo, estado, descanso)
+VALUES('9:00', '14:30', '5.5', 'Matutino', 'Completo', '20.0');
+
+INSERT INTO jornadas(hora_inicio, hora_fin, duracion, tipo, estado, descanso)
+VALUES('16:30', '20:00', '3.5', 'Vespertino', 'Completo', '0.0');
+
+INSERT INTO jornadas(hora_inicio, hora_fin, duracion, tipo, estado, descanso)
+VALUES('9:00', '14:30', '5.5', 'Matutino', 'Completo', '5.0');
+
+INSERT INTO jornadas(hora_inicio, hora_fin, duracion, tipo, estado, descanso)
+VALUES('16:30', '20:00', '3.5', 'Vespertino', 'Completo', '0.0');
+
+INSERT INTO jornadas(hora_inicio, hora_fin, duracion, tipo, estado, descanso)
+VALUES('9:00', '14:30', '5.5', 'Matutino', 'Completo', '0.0');
+
+INSERT INTO jornadas(hora_inicio, hora_fin, duracion, tipo, estado, descanso)
+VALUES('16:30', '20:00', '3.5', 'Vespertino', 'Completo', '10.0');
+
+INSERT INTO jornadas(hora_inicio, hora_fin, duracion, tipo, estado, descanso)
+VALUES('9:00', '14:30', '5.5', 'Matutino', 'Completo', '15.0');
+
+INSERT INTO jornadas(hora_inicio, hora_fin, duracion, tipo, estado, descanso)
+VALUES('16:30', '20:00', '3.5', 'Vespertino', 'Completo', '10.0');
