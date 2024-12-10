@@ -90,3 +90,18 @@ CREATE TABLE compras(
 	metodo_pago VARCHAR(20),
 	fecha_entrega DATE
 )
+
+--Creación de la tabla lotes.----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+CREATE TABLE lotes(
+	id_lote INTEGER IDENTITY(1,1),
+	numero_lote VARCHAR(15) NOT NULL,
+	cantidad_inicial INTEGER NOT NULL,
+	cantidad_disponible INTEGER,
+	estado BIT NOT NULL,
+	fecha_produccion DATE,
+	fecha_entrada DATE NOT NULL,
+	fecha_caducidad DATE NOT NULL,
+	fecha_salida DATE,
+	id_proveedor INTEGER NOT NULL,
+	observaciones VARCHAR(100)
+)
