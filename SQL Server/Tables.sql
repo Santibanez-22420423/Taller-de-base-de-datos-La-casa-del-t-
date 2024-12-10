@@ -105,3 +105,20 @@ CREATE TABLE lotes(
 	id_proveedor INTEGER NOT NULL,
 	observaciones VARCHAR(100)
 )
+
+--Creación de la tabla productos-----------------------------------------------------------------------------------------------------------------------------------------------------
+CREATE TABLE productos(
+	id_producto INTEGER IDENTITY(1,1) NOT NULL,
+	nombre VARCHAR(30) NOT NULL,
+	descripcion VARCHAR(100),
+	costo_compra MONEY NOT NULL,
+	porcentaje_ganancia REAL NOT NULL,
+	costo_venta MONEY NOT NULL,
+	cantidad_stock INTEGER NOT NULL,
+	id_clasificacion INTEGER NOT NULL,
+	estado BIT NOT NULL,
+	código_barra VARCHAR(15),
+	imagen VARCHAR (250),
+	id_lote INTEGER NOT NULL,
+	id_proveedor INTEGER NOT NULL
+)
