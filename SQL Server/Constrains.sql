@@ -140,3 +140,18 @@ alter table productos_compras
 add constraint chk_productos_compras_cantidad check (cantidad >= 0);
 
 exec sp_helpconstraint productos_compras;
+
+--Restricciones table ventas------------------------------------------------------------------------------------------------------------------------------------------------------------------
+alter table ventas
+add constraint pk_ventas_id_venta primary key (id_venta);
+
+alter table ventas
+add constraint fk_ventas_id_trabajador foreign key (id_trabajador) references trabajadores (id_trabajador);
+
+alter table ventas
+add constraint fk_ventas_id_cliente foreign key (id_cliente) references clientes (id_cliente);
+
+alter table ventas
+add constraint df_ventas_fecha DEFAULT (cast(getdate() as date)) for fecha;
+
+exec sp_helpconstraint ventas;
