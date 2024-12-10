@@ -110,3 +110,18 @@ ALTER TABLE productos
 ADD CONSTRAINT fk_productos_id_lote FOREIGN KEY (id_lote) REFERENCES lotes (id_lote);
 
 EXEC sp_helpconstraint productos;
+
+--Restricciones tabla clientes------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+alter table clientes
+add constraint pk_clientes_id_cliente primary key (id_cliente);
+
+alter table clientes
+add constraint unique_clientes_telefono unique(telefono);
+
+ALTER TABLE clientes
+ADD CONSTRAINT unique_clientes_email UNIQUE(email);
+
+ALTER TABLE clientes
+ADD CONSTRAINT chk_clientes_genero CHECK(genero = 'Masculino' OR genero = 'Femenino');
+
+exec sp_helpconstraint clientes;
