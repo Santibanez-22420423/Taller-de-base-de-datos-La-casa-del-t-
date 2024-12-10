@@ -485,3 +485,49 @@ values('8', '15', '3', '89.60', '268.8');
 
 insert into productos_compras(id_compra, id_producto, cantidad, unitario, subtotal)
 values('8', '11', '1', '103', '103');
+
+--Registros tabla ventas---------------------------------------------------------------------------------------------------------------------------------------------------------------
+insert into ventas (id_cliente, id_trabajador, metodo_pago)
+values('5', '1', 'Efectivo');
+
+insert into ventas (id_cliente, id_trabajador, metodo_pago)
+values('1', '1', 'Efectivo');
+
+insert into ventas (id_cliente, id_trabajador, metodo_pago)
+values('8', '2', 'Efectivo');
+
+insert into ventas (id_cliente, id_trabajador, metodo_pago)
+values('7', '2', 'Tarjeta');
+
+insert into ventas (id_cliente, id_trabajador, metodo_pago)
+values('3', '2', 'Efectivo');
+
+insert into ventas (id_cliente, id_trabajador, metodo_pago)
+values('2', '4', 'Efectivo');
+
+insert into ventas (id_cliente, id_trabajador, metodo_pago)
+values('10', '6', 'Efectivo');
+
+insert into ventas (id_cliente, id_trabajador, metodo_pago)
+values('7', '10', 'Efectivo');
+
+insert into ventas (id_cliente, id_trabajador, metodo_pago)
+values('9', '6', 'Tarjeta');
+
+insert into ventas (id_cliente, id_trabajador, metodo_pago)
+values('1', '5', 'Mixto');
+
+insert into ventas (id_cliente, id_trabajador, metodo_pago)
+values('10', '9', 'Tarjeta');
+
+insert into ventas (id_cliente, id_trabajador, metodo_pago)
+values('3', '3', 'Efectivo');
+
+insert into ventas (id_cliente, id_trabajador, metodo_pago)
+values('5', '8', 'Mixto');
+
+insert into ventas (id_cliente, id_trabajador, metodo_pago)
+values('2', '3', 'Tarjeta');
+
+insert into ventas (id_cliente, id_trabajador, metodo_pago)
+values('10', '7', 'Tarjeta');
