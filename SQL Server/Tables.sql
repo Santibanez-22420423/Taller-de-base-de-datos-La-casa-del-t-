@@ -66,5 +66,11 @@ CREATE TABLE jornadas(
 	notas VARCHAR(100)
 )
 
-
+--Creación de la tabla  trabajadores-jornadas------------------------------------------------------------------------------------------------------------------------------------------------------
+CREATE TABLE trabajadores_jornadas(
+	id_trabajador_jornada INTEGER IDENTITY(1,1) NOT NULL,
+	id_trabajador INTEGER NOT NULL,
+	id_jornada INTEGER NOT NULL,
+	fecha DATE NOT NULL
+)
 
