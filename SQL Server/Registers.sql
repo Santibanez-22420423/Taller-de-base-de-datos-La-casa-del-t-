@@ -378,3 +378,34 @@ values('Guayacol', '30 cápsulas de 650mg', '80.00', '12', '89.6', '20', '4', '1
 
 insert into productos (nombre, descripcion, costo_compra, porcentaje_ganancia, costo_venta, cantidad_stock, id_clasificacion, estado, id_lote, id_proveedor)
 values('Eucamiel', '70 ml', '74.00', '15', '85.1', '20', '4', '1', '16', '1' );
+
+--Registros de la tabla clientes------------------------------------------------------------------------------------------------------------------------------------------------
+INSERT INTO clientes (nombre, apellido_paterno, apellido_materno, fecha_nacimiento, genero, calle, numero, colonia, ciudad, estado, pais, codigo_postal, telefono, email, estatus, descuento_preferencial)
+VALUES('Juan', 'Pérez', 'García', '1990-03-15', 'Masculino', 'Vicente Guerrero', 4587, 'Centro', 'Sahuayo', 'Michoacán', 'México', '59000', '3531489678', 'jupegar@gmail.com', 1, 3);
+
+INSERT INTO clientes (nombre, apellido_paterno, apellido_materno, fecha_nacimiento, genero, calle, numero, colonia, ciudad, estado, pais, codigo_postal, telefono, email, estatus)
+VALUES('María', 'Gómez', 'López', '1985-06-23', 'Femenino', 'Heriberto Jara', 891, 'Centro', 'Sahuayo', 'Michoacán', 'México', '59000', '3531024876', 'margolopez@gmail.com', 1);
+
+INSERT INTO clientes (nombre, apellido_paterno, apellido_materno, fecha_nacimiento, genero, calle, numero, colonia, ciudad, estado, pais, codigo_postal, telefono, email, estatus, descuento_preferencial)
+VALUES('Luis', 'Rodríguez', 'Martínez', '2002-09-04', 'Masculino', 'Constitución', 8431, 'Centro', 'Sahuayo', 'Michoacán', 'México', '59000', '3534896510', 'lurodmar@gmail.com', 1, 5);
+
+INSERT INTO clientes (nombre, apellido_paterno, apellido_materno, fecha_nacimiento, genero, calle, numero, colonia, ciudad, estado, pais, codigo_postal, telefono, email, estatus)
+VALUES('Ana', 'López', 'Sánchez', '1997-01-30', 'Femenino', 'Calzada Revolución', 515, 'Centro', 'Sahuayo', 'Michoacán', 'México', '59000', '3531008896', 'analopsan@gmail.com', 0);
+
+INSERT INTO clientes (nombre, apellido_paterno, apellido_materno, fecha_nacimiento, genero, calle, numero, colonia, ciudad, estado, pais, codigo_postal, telefono, email, estatus, descuento_preferencial)
+VALUES('Carlos', 'Sánchez', 'Torres', '1988-12-12', 'Masculino', 'Miguel Hidalgo', 854, 'Centro', 'Sahuayo', 'Michoacán', 'México', '59000', '3534886951', 'carsantorres@gmail.com', 1, 7);
+
+INSERT INTO clientes (nombre, apellido_paterno, apellido_materno, fecha_nacimiento, genero, calle, numero, colonia, ciudad, estado, pais, codigo_postal, telefono, email, estatus, descuento_preferencial)
+VALUES('Laura', 'Martínez', 'Fernández', '1993-04-17', 'Femenino', 'California', 485, 'Centro', 'Sahuayo', 'Michoacán', 'México', '59000', '3534669751', 'laumarfer@gmail.com', 1, 10);
+
+INSERT INTO clientes (nombre, apellido_paterno, apellido_materno, fecha_nacimiento, genero, calle, numero, colonia, ciudad, estado, pais, codigo_postal, telefono, email, estatus)
+VALUES('Javier', 'Díaz', 'Castro', '2000-08-09', 'Masculino', 'Avenida de la Paz', 456, 'Centro', 'Sahuayo', 'Michoacán', 'México', '59000', '3532269842', 'javdiazcas@gmail.com', 1);
+
+INSERT INTO clientes (nombre, apellido_paterno, apellido_materno, fecha_nacimiento, genero, calle, numero, colonia, ciudad, estado, pais, codigo_postal, telefono, email, estatus, descuento_preferencial)
+VALUES('Sofia', 'Herrera', 'Morales', '1978-11-03', 'Femenino', 'Av. de los Jardines', 404, 'Centro', 'Sahuayo', 'Michoacán', 'México', '59000', '3534896001', 'sofherremor@gmail.com', 1, 3);
+
+INSERT INTO clientes (nombre, apellido_paterno, apellido_materno, fecha_nacimiento, genero, calle, numero, colonia, ciudad, estado, pais, codigo_postal, telefono, email, estatus, descuento_preferencial)
+VALUES('Miguel', 'Torres', 'Jiménez', '1995-02-18', 'Masculino', 'Bolivia', 856, 'Centro', 'Sahuayo', 'Michoacán', 'México', '59000', '3532682003', 'miguetorres@gmail.com', 1, 2);
+
+INSERT INTO clientes (nombre, apellido_paterno, apellido_materno, fecha_nacimiento, genero, calle, numero, colonia, ciudad, estado, pais, codigo_postal, telefono, email, estatus, descuento_preferencial)
+VALUES('Elena', 'Fernández', 'Ruiz', '1983-07-25', 'Femenino', 'Paseo del Río', 458, 'Centro', 'Guadalajara', 'Jalisco', 'México', '44100', '3358964871', 'eleferruiz@gmail.com', 1, 2);
