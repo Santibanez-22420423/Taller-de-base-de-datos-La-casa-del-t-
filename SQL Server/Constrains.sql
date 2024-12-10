@@ -59,3 +59,9 @@ ALTER TABLE trabajadores_jornadas
 ADD CONSTRAINT fk_trabajadores_jornadas_id_jornada FOREIGN KEY (id_jornada) REFERENCES jornadas (id_jornada);
 
 EXEC sp_helpconstraint trabajadores_jornadas;
+
+--Restricciones tabla clasificaciones----------------------------------------------------------------------------------------------------------------------------------
+ALTER TABLE clasificaciones
+ADD CONSTRAINT pk_clasificaciones_id_clasificacion PRIMARY KEY (id_clasificacion);
+
+EXEC sp_helpconstraint clasificaciones;
