@@ -107,75 +107,76 @@ VALUES('9:00', '14:30', '5.5', 'Matutino', 'Completo', '15.0');
 INSERT INTO jornadas(hora_inicio, hora_fin, duracion, tipo, estado, descanso)
 VALUES('16:30', '20:00', '3.5', 'Vespertino', 'Completo', '10.0');
 
+SELECT * FROM trabajadores_jornadas;
 --Registros de la tabla trabajadores-jornadas (workers-days)----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
-INSERT INTO trabajadores_jornadas(id_trabajador, id_jornada, fecha, metodo_pago, fecha_entrega)
-VALUES('1', '1', '2022-01-16');
+INSERT INTO trabajadores_jornadas(id_trabajador, id_jornada, fecha)
+VALUES(1, 1, '2022-01-16');
 
-INSERT INTO trabajadores_jornadas(id_trabajador, id_jornada, fecha, metodo_pago, fecha_entrega)
-VALUES('2', '2', '2022-01-16');
+INSERT INTO trabajadores_jornadas(id_trabajador, id_jornada, fecha)
+VALUES(2, 2, '2022-01-16');
 
-INSERT INTO trabajadores_jornadas(id_trabajador, id_jornada, fecha, metodo_pago, fecha_entrega)
-VALUES('3', '3', '2022-01-16');
+INSERT INTO trabajadores_jornadas(id_trabajador, id_jornada, fecha)
+VALUES(3, 3, '2022-01-16');
 
-INSERT INTO trabajadores_jornadas(id_trabajador, id_jornada, fecha, metodo_pago, fecha_entrega)
-VALUES('4', '4', '2022-01-16');
+INSERT INTO trabajadores_jornadas(id_trabajador, id_jornada, fecha)
+VALUES(4, 4, '2022-01-16');
 
-INSERT INTO trabajadores_jornadas(id_trabajador, id_jornada, fecha, metodo_pago, fecha_entrega)
-VALUES('5', '5', '2022-01-16');
+INSERT INTO trabajadores_jornadas(id_trabajador, id_jornada, fecha)
+VALUES(5, 5, '2022-01-16');
 
-INSERT INTO trabajadores_jornadas(id_trabajador, id_jornada, fecha, metodo_pago, fecha_entrega)
-VALUES('6', '6', '2022-01-16');
+INSERT INTO trabajadores_jornadas(id_trabajador, id_jornada, fecha)
+VALUES(6, 6, '2022-01-16');
 
-INSERT INTO trabajadores_jornadas(id_trabajador, id_jornada, fecha, metodo_pago, fecha_entrega)
-VALUES('1', '1', '2022-01-17');
+INSERT INTO trabajadores_jornadas(id_trabajador, id_jornada, fecha)
+VALUES(1, 1, '2022-01-17');
 
-INSERT INTO trabajadores_jornadas(id_trabajador, id_jornada, fecha, metodo_pago, fecha_entrega)
-VALUES('7', '7', '2022-01-17');
+INSERT INTO trabajadores_jornadas(id_trabajador, id_jornada, fecha)
+VALUES(7, 7, '2022-01-17');
 
-INSERT INTO( trabajadores_jornadasid_trabajador, id_jornada, fecha, metodo_pago, fecha_entrega)
-VALUES('8', '8', '2022-01-17');
+INSERT INTO trabajadores_jornadas(id_trabajador, id_jornada, fecha)
+VALUES(8, 8, '2022-01-17');
 
-INSERT INTO trabajadores_jornadas(id_trabajador, id_jornada, fecha, metodo_pago, fecha_entrega)
-VALUES('9', '9', '2022-01-17');
+INSERT INTO trabajadores_jornadas(id_trabajador, id_jornada, fecha)
+VALUES(9, 9, '2022-01-17');
 
-INSERT INTO trabajadores_jornadas(id_trabajador, id_jornada, fecha, metodo_pago, fecha_entrega)
-VALUES('10', '10', '2022-01-17');
+INSERT INTO trabajadores_jornadas(id_trabajador, id_jornada, fecha)
+VALUES(10, 10, '2022-01-17');
 
-INSERT INTO trabajadores_jornadas(id_trabajador, id_jornada, fecha, metodo_pago, fecha_entrega)
-VALUES('2', '2', '2022-01-17');
+INSERT INTO trabajadores_jornadas(id_trabajador, id_jornada, fecha)
+VALUES(2, 2, '2022-01-17');
 
-INSERT INTO trabajadores_jornadas(id_trabajador, id_jornada, fecha, metodo_pago, fecha_entrega)
-VALUES('1', '1', '2022-01-18');
+INSERT INTO trabajadores_jornadas(id_trabajador, id_jornada, fecha)
+VALUES(1, 1, '2022-01-18');
 
-INSERT INTO trabajadores_jornadas(id_trabajador, id_jornada, fecha, metodo_pago, fecha_entrega)
-VALUES('3', '3', '2022-01-18');
+INSERT INTO trabajadores_jornadas(id_trabajador, id_jornada, fecha)
+VALUES(3, 3, '2022-01-18');
 
-INSERT INTO trabajadores_jornadas(id_trabajador, id_jornada, fecha, metodo_pago, fecha_entrega)
-VALUES('4', '4', '2022-01-18');
+INSERT INTO trabajadores_jornadas(id_trabajador, id_jornada, fecha)
+VALUES(4, 4, '2022-01-18');
 
-INSERT INTO trabajadores_jornadas(id_trabajador, id_jornada, fecha, metodo_pago, fecha_entrega)
-VALUES('5', '5', '2022-01-18');
+INSERT INTO trabajadores_jornadas(id_trabajador, id_jornada, fecha)
+VALUES(5, 5, '2022-01-18');
 
-INSERT INTO trabajadores_jornadas(id_trabajador, id_jornada, fecha, metodo_pago, fecha_entrega)
-VALUES('6', '6', '2022-01-18');
+INSERT INTO trabajadores_jornadas(id_trabajador, id_jornada, fecha)
+VALUES(6, 6, '2022-01-18');
 
-INSERT INTO trabajadores_jornadas(id_trabajador, id_jornada, fecha, metodo_pago, fecha_entrega)
-VALUES('7', '7', '2022-01-18');
+INSERT INTO trabajadores_jornadas(id_trabajador, id_jornada, fecha)
+VALUES(7, 7, '2022-01-18');
 
-INSERT INTO trabajadores_jornadas(id_trabajador, id_jornada, fecha, metodo_pago, fecha_entrega)
-VALUES('1', '1', '2022-01-19');
+INSERT INTO trabajadores_jornadas(id_trabajador, id_jornada, fecha)
+VALUES(1, 1, '2022-01-19');
 
-INSERT INTO trabajadores_jornadas(id_trabajador, id_jornada, fecha, metodo_pago, fecha_entrega)
-VALUES('8', '8', '2022-01-19');
+INSERT INTO trabajadores_jornadas(id_trabajador, id_jornada, fecha)
+VALUES(8, 8, '2022-01-19');
 
-INSERT INTO trabajadores_jornadas(id_trabajador, id_jornada, fecha, metodo_pago, fecha_entrega)
-VALUES('9', '9', '2022-01-19');
+INSERT INTO trabajadores_jornadas(id_trabajador, id_jornada, fecha)
+VALUES(9, 9, '2022-01-19');
 
-INSERT INTO trabajadores_jornadas(id_trabajador, id_jornada, fecha, metodo_pago, fecha_entrega)
-VALUES('10', '10', '2022-01-19');
+INSERT INTO trabajadores_jornadas(id_trabajador, id_jornada, fecha)
+VALUES(10, 10, '2022-01-19');
 
-INSERT INTO trabajadores_jornadas(id_trabajador, id_jornada, fecha, metodo_pago, fecha_entrega)
-VALUES('2', '2', '2022-01-19');
+INSERT INTO trabajadores_jornadas(id_trabajador, id_jornada, fecha)
+VALUES(2, 2, '2022-01-19');
 
-INSERT INTO trabajadores_jornadas(id_trabajador, id_jornada, fecha, metodo_pago, fecha_entrega)
-VALUES('3', '3', '2022-01-19s');
+INSERT INTO trabajadores_jornadas(id_trabajador, id_jornada, fecha)
+VALUES(3, 3, '2022-01-19');

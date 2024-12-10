@@ -74,3 +74,11 @@ CREATE TABLE trabajadores_jornadas(
 	fecha DATE NOT NULL
 )
 
+--Creación de la tabla clasificaciones---------------------------------------------------------------------------------------------------------------------------------------------
+CREATE TABLE clasificaciones(
+	id_clasificacion INTEGER IDENTITY(1,1),
+	nombre VARCHAR(30) NOT NULL,
+	descripcion VARCHAR(250),
+	estado BIT,
+	imagen VARCHAR(250)
+)
