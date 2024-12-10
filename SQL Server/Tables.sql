@@ -163,3 +163,13 @@ CREATE TABLE ventas(
 	fecha DATE NOT NULL,
 	metodo_pago VARCHAR(20)
 )
+
+--Tabla productos_ventas-------------------------------------------------------------------------------------------------------------------------------------------------------------
+create table productos_ventas(
+     id_producto_venta integer identity(1,1),
+	 id_venta integer not null,
+	 id_producto integer not null,
+	 cantidad integer not null,
+	 unitario integer,
+	 subtotal money
+)
