@@ -39,3 +39,11 @@ ADD CONSTRAINT unique_proveedores_email UNIQUE(email);
 
 EXEC sp_helpconstraint proveedores;
 
+--Restricciones de la tabla jornadas (days)------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+ALTER TABLE jornadas
+ADD CONSTRAINT pk_jornadas_id_jornada PRIMARY KEY (id_jornada);
+
+ALTER TABLE jornadas
+ADD CONSTRAINT chk_jornadas_tipo CHECK(tipo = 'Matutino' OR tipo = 'Vespertino' OR tipo = 'Tiempo completo' OR tipo = 'Mixto');
+
+EXEC sp_helpconstraint jornadas;
