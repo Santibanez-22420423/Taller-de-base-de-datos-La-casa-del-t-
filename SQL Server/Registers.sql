@@ -196,3 +196,75 @@ VALUES('Sistema respiratorio', 'Es el sistema responsable de intercambiar oxíge
 
 INSERT INTO clasificaciones(nombre, descripcion, estado, imagen)
 VALUES('Sistema inmunológico', 'Es el sistema responsable de proteger al cuerpo contra patógenos, células cancerígenas, tóxinas y agentes extraños.', 1, 'https://www.google.com/search?q=sistema+inmunologico');
+
+[00:56, 10/12/2024] Maritza Santibañez: --Restricciones tabla compras --------------------------------------------------------------------------------------------------------------------------------------------------
+ALTER TABLE compras
+ADD CONSTRAINT pk_compras_id_compra PRIMARY KEY (id_compra);
+
+ALTER TABLE compras
+ADD CONSTRAINT fk_compras_id_proveedor FOREIGN KEY (id_proveedor) REFERENCES proveedores(id_proveedor);
+
+ALTER TABLE compras
+ADD CONSTRAINT chk_compras_metodo_pago CHECK(metodo_pago = 'Tarjeta' OR metodo_pago = 'Efectivo' OR metodo_pago = 'Mixto')
+
+EXEC sp_helpconstraint compras;
+[00:57, 10/12/2024] Maritza Santibañez: --Registros de la tabla compras-----------------------------------------------------------------------------------------------------------------------------------------------------
+INSERT INTO compras (id_proveedor, fecha, metodo_pago, fecha_entrega) 
+VALUES('1', '2022-01-10', 'Efectivo', '2022-01-11');
+
+INSERT INTO compras (id_proveedor, fecha, metodo_pago, fecha_entrega) 
+VALUES('2', '2022-01-25', 'Efectivo', '2022-01-26');
+
+INSERT INTO compras (id_proveedor, fecha, metodo_pago, fecha_entrega) 
+VALUES('3', '2022-02-09', 'Tarjeta', '2022-02-10');
+
+INSERT INTO compras (id_proveedor, fecha, metodo_pago, fecha_entrega) 
+VALUES('4', '2022-02-24', 'Efectivo', '2022-02-25');
+
+INSERT INTO compras (id_proveedor, fecha, metodo_pago, fecha_entrega) 
+VALUES('1', '2022-03-12', 'Efectivo', '2022-03-13');
+
+INSERT INTO compras (id_proveedor, fecha, metodo_pago, fecha_entrega) 
+VALUES('2', '2022-03-27', 'Mixto', '2022-03-28');
+
+INSERT INTO compras (id_proveedor, fecha, metodo_pago, fecha_entrega) 
+VALUES('3', '2022-04-11', 'Efectivo', '2022-04-12');
+
+INSERT INTO compras (id_proveedor, fecha, metodo_pago, fecha_entrega) 
+VALUES('4', '2022-04-26', 'Tarjeta', '2022-04-27');
+
+INSERT INTO compras (id_proveedor, fecha, metodo_pago, fecha_entrega) 
+VALUES('1', '2022-05-11', 'Tarjeta', '2022-05-12');
+
+INSERT INTO compras (id_proveedor, fecha, metodo_pago, fecha_entrega) 
+VALUES('2', '2022-06-26', 'Efectivo', '2022-06-27');
+
+INSERT INTO compras (id_proveedor, fecha, metodo_pago, fecha_entrega) 
+VALUES('3', '2022-07-11', 'Efectivo', '2022-07-12');
+
+INSERT INTO compras (id_proveedor, fecha, metodo_pago, fecha_entrega) 
+VALUES('4', '2022-07-26', 'Efectivo', '2022-07-27');
+
+INSERT INTO compras (id_proveedor, fecha, metodo_pago, fecha_entrega) 
+VALUES('1', '2022-08-10', 'Tarjeta', '2022-08-11');
+
+INSERT INTO compras (id_proveedor, fecha, metodo_pago, fecha_entrega) 
+VALUES('2', '2022-08-25', 'Efectivo', '2022-08-26');
+
+INSERT INTO compras (id_proveedor, fecha, metodo_pago, fecha_entrega) 
+VALUES('2', '2022-09-09', 'Efectivo', '2022-09-10');
+
+INSERT INTO compras (id_proveedor, fecha, metodo_pago, fecha_entrega) 
+VALUES('4', '2022-09-24', 'Mixto', '2022-09-25');
+
+INSERT INTO compras (id_proveedor, fecha, metodo_pago, fecha_entrega) 
+VALUES('4', '2022-09-24', 'Efectivo', '2023-01-11');
+
+INSERT INTO compras (id_proveedor, fecha, metodo_pago, fecha_entrega) 
+VALUES('4', '2022-09-24', 'Tarjeta', '2023-01-26');
+
+INSERT INTO compras (id_proveedor, fecha, metodo_pago, fecha_entrega) 
+VALUES('4', '2022-09-24', 'Tarjeta', '2023-02-10');
+
+INSERT INTO compras (id_proveedor, fecha, metodo_pago, fecha_entrega) 
+VALUES('4', '2022-09-24', 'Tarjeta', '2023-02-25'); 
