@@ -48,3 +48,30 @@ INSERT INTO trabajadores(nombre, apellido_paterno, apellido_materno, curp, fecha
 	ciudad, estado, pais, codigo_postal, nivel_educativo, fecha_contratacion, puesto, salario_base, tipo_contrato, telefono, email, estatus, numero_seguro_social)
 VALUES('Daniela Alejandra', 'Torres', 'Ortiz', 'TODA981225KIULMOA1', '1998-12-25', 'Femenino', 'Casado', 'Calzada Revolución', '846', 'Valle Verde', 
 	'Sahuayo', 'Michoacán', 'México', '59000', 'Preparatoria', '2024-05-03', 'Vendedor', '250.0', 'Temporal', '3531115897', 'torresdan@gmail.com', '1', '589631024')
+
+--Registros de la tabla proveedores)------------------------------------------------------------------------------------------------------------------------------------------------------------
+INSERT INTO proveedores(nombre, apellido_paterno, apellido_materno, telefono, email, calle, numero, colonia, ciudad, estado, pais,
+	codigo_postal, URL_sitio_web, nombre_compañia, estatus)
+VALUES('Juan', 'Pérez', 'García', '3336144830', 'elangeldetusalud@gmail.com', 'Ignacio Zaragoza', '181', 'Centro', 'Guadalajara', 'Jalisco',
+	'México', '44100', 'https://suplementosyplantas.com/?srsltid=AfmBOoq92vKoZjoXsq6p7t4iwhBG4ZwqxN0UdeViBZNmqCwNALmu2eUr', 'El ángel de tu salud',
+	'1');
+
+INSERT INTO proveedores(nombre, apellido_paterno, apellido_materno, telefono, email, calle, numero, colonia, ciudad, estado, pais,
+	codigo_postal, URL_sitio_web, nombre_compañia, estatus)
+VALUES('María', 'López', 'Fernandez', '3336585664', 'centrobotanicoazteca@gmail.com', 'San Felipe', '369', 'Centro', 'Guadalajara', 'Jalisco',
+	'México', '44100', 'https://www.facebook.com/cbaguadalajara', 'Centro botánico Azteca', '1');
+
+INSERT INTO proveedores(nombre, apellido_paterno, apellido_materno, telefono, email, calle, numero, colonia, ciudad, estado, pais,
+	codigo_postal, URL_sitio_web, nombre_compañia, estatus)
+VALUES('Carlos', 'Rodríguez', 'Sánchez', '3336204228', 'grupoypenza@gmail.com', 'Volcán Quinceo', '201', 'Paraísos del Colli', 'Zapopan', 'Jalisco',
+	'México', '45069', 'https://ypenza.com/', 'Grupo Ypenza de México S.A. de C.V.', '1');
+
+INSERT INTO proveedores(nombre, apellido_paterno, apellido_materno, telefono, email, calle, numero, colonia, ciudad, estado, pais,
+	codigo_postal, URL_sitio_web, nombre_compañia, estatus)
+VALUES('Ana', 'Martínez', 'Gómez', '3336144009', 'dacdaraf@gmail.com', 'Ignacio Zaragoza', '159', 'Centro', 'Guadalajara', 'Jalisco',
+	'México', '44100', 'https://www.facebook.com/p/Dacdaraf-100067037136220/', 'Dacdaraf', '1');
+
+INSERT INTO proveedores(nombre, apellido_paterno, apellido_materno, telefono, email, calle, numero, colonia, ciudad, estado, pais,
+	codigo_postal, URL_sitio_web, nombre_compañia, estatus)
+VALUES('Luis', 'Torres', 'Díaz', '3318148007', 'shananaturals@gmail.com', 'Av. Tabachines', '3514', 'Loma Bonita Ejidal', 'Zapopan', 'Jalisco',
+	'México', '45085', 'https://shanaturals.com/?srsltid=AfmBOoo-JcPW9la_VOsdTdUhcregxIOhk_x6s7SUk1hr3ALKFJuRnBEP', 'Shananaturals', '1');
