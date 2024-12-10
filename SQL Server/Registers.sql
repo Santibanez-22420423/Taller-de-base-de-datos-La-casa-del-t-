@@ -615,3 +615,43 @@ VALUES('13', '12', '2', '53');
 INSERT INTO productos_ventas (id_venta, id_producto, cantidad, unitario)
 VALUES('13', '12', '2', '53');
 
+--Registros tabla devoluciones_compras--------------------------------------------------------------------------------------------------------------------------------------------------------------
+INSERT INTO devoluciones_compras(id_compra, id_producto, fecha, cantidad, motivo, estado) VALUES('1', '5', '2022-01-11', '1', 'Producto defectuoso', 'Completado');
+
+INSERT INTO devoluciones_compras(id_compra, id_producto, fecha, cantidad, motivo, estado) VALUES('1', '7', '2022-01-11', '2','Producto defectuoso', 'Completado');
+
+INSERT INTO devoluciones_compras(id_compra, id_producto, fecha, cantidad, motivo, estado) VALUES('8', '8', '2022-04-27', '2', 'Producto caducado', 'Completado');
+
+INSERT INTO devoluciones_compras(id_compra, id_producto, fecha, cantidad, motivo, estado) VALUES('2', '2', '2022-01-26', '3', 'Producto defectuoso', 'Completado');
+
+INSERT INTO devoluciones_compras(id_compra, id_producto, fecha, cantidad, motivo, estado) VALUES('2', '3', '2022-01-26', '2', 'Producto caducado', 'Completado');
+
+INSERT INTO devoluciones_compras(id_compra, id_producto, fecha, cantidad, motivo, estado) VALUES('2', '12', '2022-01-26', '1', 'Producto caducado', 'Completado');
+
+INSERT INTO devoluciones_compras(id_compra, id_producto, fecha, cantidad, motivo, estado) VALUES('3', '8', '2022-02-10', '2', 'Producto equivocado', 'Completado');
+
+INSERT INTO devoluciones_compras(id_compra, id_producto, fecha, cantidad, motivo, estado) VALUES('3', '8', '2022-02-10', '1', 'Producto defectuoso', 'Completado');
+
+INSERT INTO devoluciones_compras(id_compra, id_producto, fecha, cantidad, motivo, estado) VALUES('3', '8', '2022-02-10', '1', 'Producto caducado', 'Completado');
+
+INSERT INTO devoluciones_compras(id_compra, id_producto, fecha, cantidad, motivo, estado) VALUES('4', '15', '2022-02-25', '2', 'Producto caducado', 'Completado');
+
+INSERT INTO devoluciones_compras(id_compra, id_producto, fecha, cantidad, motivo, estado) VALUES('4', '6', '2022-02-25', '1', 'Producto defectuoso', 'Completado');
+
+INSERT INTO devoluciones_compras(id_compra, id_producto, fecha, cantidad, motivo, estado) VALUES('4', '10', '2022-02-25', '3', 'Producto defectuoso', 'Completado');
+
+INSERT INTO devoluciones_compras(id_compra, id_producto, fecha, cantidad, motivo, estado) VALUES('5', '4', '2022-03-13', '1', 'Producto caducado', 'Completado');
+
+INSERT INTO devoluciones_compras(id_compra, id_producto, fecha, cantidad, motivo, estado) VALUES('5', '11', '2022-03-13', '2', 'Producto defectuoso', 'Completado');
+
+INSERT INTO devoluciones_compras(id_compra, id_producto, fecha, cantidad, motivo, estado) VALUES('5', '4', '2022-03-13', '1', 'Producto caducado', 'Completado');
+
+INSERT INTO devoluciones_compras(id_compra, id_producto, fecha, cantidad, motivo, estado) VALUES('6', '15', '2022-03-27', '2', 'Producto equivocado', 'Completado');
+
+INSERT INTO devoluciones_compras(id_compra, id_producto, fecha, cantidad, motivo, estado) VALUES('6', '15', '2022-03-27', '2', 'Producto defectuoso', 'Completado');
+
+INSERT INTO devoluciones_compras(id_compra, id_producto, fecha, cantidad, motivo, estado) VALUES('6', '15', '2022-03-27', '2', 'Producto caducado', 'Completado');
+
+INSERT INTO devoluciones_compras(id_compra, id_producto, fecha, cantidad, motivo, estado) VALUES('7', '9', '2022-04-12', '2', 'Producto defectuoso', 'Completado');
+
+INSERT INTO devoluciones_compras(id_compra, id_producto, fecha, cantidad, motivo, estado) VALUES('7', '16', '2022-04-12', '3', 'Producto caducado', 'Completado');
