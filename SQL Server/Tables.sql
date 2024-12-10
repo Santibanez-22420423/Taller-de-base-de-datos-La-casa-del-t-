@@ -173,3 +173,16 @@ create table productos_ventas(
 	 unitario integer,
 	 subtotal money
 )
+
+--Tabla devoluciones_compras-----------------------------------------------------------------------------------------------------------------------------------------------------------------
+create table devoluciones_compras(
+	id_devolucion_compra integer identity(1,1) not null,
+	id_compra integer not null,
+    id_producto integer not null,
+	fecha date not null,
+	cantidad integer not null,
+	motivo VARCHAR(100),
+	unitario integer,
+	reembolso money,
+	estado VARCHAR(30),
+)
