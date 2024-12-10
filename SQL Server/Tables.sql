@@ -54,7 +54,17 @@ CREATE TABLE proveedores(
 	estatus VARCHAR(5)
 )
 
-
+--Creación de la tabla  jornadas------------------------------------------------------------------------------------------------------------------------------------------------------
+CREATE TABLE jornadas(
+	id_jornada INTEGER IDENTITY(1,1),
+	hora_inicio TIME(0) NOT NULL,
+	hora_fin TIME(0) NOT NULL,
+	duracion REAL,
+	tipo VARCHAR(20),
+	estado VARCHAR(20) NOT NULL,
+	descanso REAL,
+	notas VARCHAR(100)
+)
 
 
 
