@@ -208,7 +208,7 @@ ALTER TABLE compras
 ADD CONSTRAINT chk_compras_metodo_pago CHECK(metodo_pago = 'Tarjeta' OR metodo_pago = 'Efectivo' OR metodo_pago = 'Mixto')
 
 EXEC sp_helpconstraint compras;
-[00:57, 10/12/2024] Maritza Santibañez: --Registros de la tabla compras-----------------------------------------------------------------------------------------------------------------------------------------------------
+--Registros de la tabla compras-----------------------------------------------------------------------------------------------------------------------------------------------------
 INSERT INTO compras (id_proveedor, fecha, metodo_pago, fecha_entrega) 
 VALUES('1', '2022-01-10', 'Efectivo', '2022-01-11');
 
@@ -268,3 +268,64 @@ VALUES('4', '2022-09-24', 'Tarjeta', '2023-02-10');
 
 INSERT INTO compras (id_proveedor, fecha, metodo_pago, fecha_entrega) 
 VALUES('4', '2022-09-24', 'Tarjeta', '2023-02-25'); 
+
+--Registros de la tabla lotes-----------------------------------------------------------------------------------------------------------------------------
+INSERT INTO lotes(numero_lote, cantidad_inicial, cantidad_disponible, estado, fecha_produccion, fecha_entrada, fecha_caducidad, id_proveedor) 
+VALUES('LT-83942', '30', '15', '1', '2022-01-01', '2022-01-10', '2027-01-01', '1');
+
+INSERT INTO lotes(numero_lote, cantidad_inicial, cantidad_disponible, estado, fecha_produccion, fecha_entrada, fecha_caducidad, id_proveedor) 
+VALUES('LT-26358', '10', '5', '1', '2022-01-15', '2022-01-25', '2027-01-15', '2');
+
+INSERT INTO lotes(numero_lote, cantidad_inicial, cantidad_disponible, estado, fecha_produccion, fecha_entrada, fecha_caducidad, id_proveedor) 
+VALUES('LT97514', '32', '16', '1', '2022-02-01', '2022-02-10', '2027-02-01', '3');
+
+INSERT INTO lotes(numero_lote, cantidad_inicial, cantidad_disponible, estado, fecha_produccion, fecha_entrada, fecha_caducidad, fecha_salida, id_proveedor)  
+VALUES('LT-68273', '10', '5', '0', '2022-02-15', '2022-02-25', '2027-02-15', '2022-07-21', '4');
+
+INSERT INTO lotes(numero_lote, cantidad_inicial, cantidad_disponible, estado, fecha_produccion, fecha_entrada, fecha_caducidad, id_proveedor) 
+VALUES('LT-10479', '10', '5', '1', '2022-03-01', '2022-03-10', '2027-03-01', '5');
+
+INSERT INTO lotes(numero_lote, cantidad_inicial, cantidad_disponible, estado, fecha_produccion, fecha_entrada, fecha_caducidad, id_proveedor) 
+VALUES('LT-39682', '45', '23', '1', '2022-03-15', '2022-03-25', '2027-03-15', '1');
+
+INSERT INTO lotes(numero_lote, cantidad_inicial, cantidad_disponible, estado, fecha_produccion, fecha_entrada, fecha_caducidad, id_proveedor) 
+VALUES('LT-84765', '35', '17', '1', '2022-04-01', '2022-04-10', '2027-04-01', '2');
+
+INSERT INTO lotes(numero_lote, cantidad_inicial, cantidad_disponible, estado, fecha_produccion, fecha_entrada, fecha_caducidad, id_proveedor)  
+VALUES('LT-21349', '10', '5', '1', '2022-04-15', '2022-04-25', '2027-04-15', '3');
+
+INSERT INTO lotes(numero_lote, cantidad_inicial, cantidad_disponible, estado, fecha_produccion, fecha_entrada, fecha_caducidad, fecha_salida, id_proveedor) 
+VALUES('LT-56327', '38', '19', '0', '2022-05-01', '2022-05-10', '2027-05-01', '2022-12-10', '4');
+
+INSERT INTO lotes(numero_lote, cantidad_inicial, cantidad_disponible, estado, fecha_produccion, fecha_entrada, fecha_caducidad, id_proveedor) 
+VALUES('LT-70895', '20', '10', '1', '2022-05-15', '2022-05-25', '2027-05-15', '5');
+
+INSERT INTO lotes(numero_lote, cantidad_inicial, cantidad_disponible, estado, fecha_produccion, fecha_entrada, fecha_caducidad, id_proveedor) 
+VALUES('LT-39284', '15', '8', '1', '2022-06-01', '2022-06-10', '2027-06-01', '1');
+
+INSERT INTO lotes(numero_lote, cantidad_inicial, cantidad_disponible, estado, fecha_produccion, fecha_entrada, fecha_caducidad, id_proveedor) 
+VALUES('LT-64837', '40', '20', '1', '2022-07-15', '2022-07-25', '2027-07-15', '2');
+
+INSERT INTO lotes(numero_lote, cantidad_inicial, cantidad_disponible, estado, fecha_produccion, fecha_entrada, fecha_caducidad, id_proveedor) 
+VALUES('LT-72915', '20', '10', '1', '2022-08-01', '2022-08-10', '2027-08-01', '3');
+
+INSERT INTO lotes(numero_lote, cantidad_inicial, cantidad_disponible, estado, fecha_produccion, fecha_entrada, fecha_caducidad, id_proveedor) 
+VALUES('LT-18492', '35', '17', '1', '2022-08-15', '2022-08-25', '2027-08-15', '4');
+
+INSERT INTO lotes(numero_lote, cantidad_inicial, cantidad_disponible, estado, fecha_produccion, fecha_entrada, fecha_caducidad, id_proveedor) 
+VALUES('LT-53729', '40', '20', '1', '2022-09-01', '2022-09-10', '2027-09-01', '5');
+
+INSERT INTO lotes(numero_lote, cantidad_inicial, cantidad_disponible, estado, fecha_produccion, fecha_entrada, fecha_caducidad, id_proveedor)  
+VALUES('LT-30946', '40', '20', '1', '2022-09-15', '2022-09-25', '2027-09-15', '1');
+
+INSERT INTO lotes(numero_lote, cantidad_inicial, cantidad_disponible, estado, fecha_produccion, fecha_entrada, fecha_caducidad, id_proveedor) 
+VALUES('LT-82173', '40', '20', '1', '2022-10-01', '2022-10-10', '2027-10-01', '2');
+
+INSERT INTO lotes(numero_lote, cantidad_inicial, cantidad_disponible, estado, fecha_produccion, fecha_entrada, fecha_caducidad, fecha_salida, id_proveedor)  
+VALUES('LT-46852', '30', '0', '1', '2022-10-15', '2022-10-25', '2027-10-15', '2023-05-10', '3');
+
+INSERT INTO lotes(numero_lote, cantidad_inicial, cantidad_disponible, estado, fecha_produccion, fecha_entrada, fecha_caducidad, id_proveedor) 
+VALUES('LT-59038', '42', '21', '1', '2022-11-01', '2022-11-10', '2027-11-01', '4');
+
+INSERT INTO lotes(numero_lote, cantidad_inicial, cantidad_disponible, estado, fecha_produccion, fecha_entrada, fecha_caducidad, id_proveedor) 
+VALUES('LT-74192', '10', '5', '1', '2022-11-15', '2022-11-25', '2027-11-15', '5');
