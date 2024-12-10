@@ -144,3 +144,13 @@ CREATE TABLE clientes(
 	estatus BIT NOT NULL,
 	descuento_preferencial REAL
 )
+
+--Creación de la tabla productos_compras-----------------------------------------------------------------------------------------------------------------------------------------------------
+CREATE TABLE productos_compras(
+     id_producto_compra INTEGER IDENTITY(1,1),
+	 id_compra INTEGER NOT NULL,
+	 id_producto INTEGER NOT NULL,
+	 cantidad INTEGER NOT NULL,
+	 unitario REAL NOT NULL,
+	 subtotal MONEY
+)
