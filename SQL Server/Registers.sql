@@ -409,3 +409,79 @@ VALUES('Miguel', 'Torres', 'Jiménez', '1995-02-18', 'Masculino', 'Bolivia', 856
 
 INSERT INTO clientes (nombre, apellido_paterno, apellido_materno, fecha_nacimiento, genero, calle, numero, colonia, ciudad, estado, pais, codigo_postal, telefono, email, estatus, descuento_preferencial)
 VALUES('Elena', 'Fernández', 'Ruiz', '1983-07-25', 'Femenino', 'Paseo del Río', 458, 'Centro', 'Guadalajara', 'Jalisco', 'México', '44100', '3358964871', 'eleferruiz@gmail.com', 1, 2);
+
+--Registros tabla productos_compras-----------------------------------------------------------------------------------------------------------------------------
+insert into productos_compras(id_compra, id_producto, cantidad, unitario, subtotal)
+values('1', '1', '5', '50.60', '253');
+
+insert into productos_compras(id_compra, id_producto, cantidad, unitario, subtotal)
+values('1', '5', '2', '85.12', '170.24');
+
+insert into productos_compras(id_compra, id_producto, cantidad, unitario, subtotal)
+values('1', '7', '3', '287.50', '862.5');
+
+insert into productos_compras(id_compra, id_producto, cantidad, unitario, subtotal)
+values('1', '10', '2', '95.20', '190.4');
+
+insert into productos_compras(id_compra, id_producto, cantidad, unitario, subtotal)
+values('2', '2', '1', '99.68', '99.68');
+
+insert into productos_compras(id_compra, id_producto, cantidad, unitario, subtotal)
+values('2', '3', '3', '158.70', '476.1');
+
+insert into productos_compras(id_compra, id_producto, cantidad, unitario, subtotal)
+values('2', '12', '1', '56.36', '56.36');
+
+insert into productos_compras(id_compra, id_producto, cantidad, unitario, subtotal)
+values('3', '8', '2', '297.00', '594');
+
+insert into productos_compras(id_compra, id_producto, cantidad, unitario, subtotal)
+values('4', '15', '4', '89.60', '358.4');
+
+insert into productos_compras(id_compra, id_producto, cantidad, unitario, subtotal)
+values('4', '12', '1', '56.36', '56.36');
+
+insert into productos_compras(id_compra, id_producto, cantidad, unitario, subtotal)
+values('4', '6', '3', '95.20', '285.6');
+
+insert into productos_compras(id_compra, id_producto, cantidad, unitario, subtotal)
+values('4', '10', '1', '95.20', '95.20');
+
+insert into productos_compras(id_compra, id_producto, cantidad, unitario, subtotal)
+values('4', '1', '3', '50.60', '151.8');
+
+insert into productos_compras(id_compra, id_producto, cantidad, unitario, subtotal)
+values('5', '5', '2', '104.50', '209');
+
+insert into productos_compras(id_compra, id_producto, cantidad, unitario, subtotal)
+values('5', '11', '3', '116.00', '348');
+
+insert into productos_compras(id_compra, id_producto, cantidad, unitario, subtotal)
+values('6', '15', '2', '89.60', '179.2');
+
+insert into productos_compras(id_compra, id_producto, cantidad, unitario, subtotal)
+values('7', '2', '2', '99.68', '199.36');
+
+insert into productos_compras(id_compra, id_producto, cantidad, unitario, subtotal)
+values('7', '10', '2', '95.20', '190.4');
+
+insert into productos_compras(id_compra, id_producto, cantidad, unitario, subtotal)
+values('7', '16', '2', '85.10', '170.2');
+
+insert into productos_compras(id_compra, id_producto, cantidad, unitario, subtotal)
+values('8', '13', '3', '66.70', '200.1');
+
+insert into productos_compras(id_compra, id_producto, cantidad, unitario, subtotal)
+values('8', '8', '1', '95.20', '95.20');
+
+insert into productos_compras(id_compra, id_producto, cantidad, unitario, subtotal)
+values('8', '2', '1', '99.68', '99.68');
+
+insert into productos_compras(id_compra, id_producto, cantidad, unitario, subtotal)
+values('8', '8', '1', '297.00', '297.00');
+
+insert into productos_compras(id_compra, id_producto, cantidad, unitario, subtotal)
+values('8', '15', '3', '89.60', '268.8');
+
+insert into productos_compras(id_compra, id_producto, cantidad, unitario, subtotal)
+values('8', '11', '1', '103', '103');
