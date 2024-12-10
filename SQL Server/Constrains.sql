@@ -86,3 +86,27 @@ ALTER TABLE lotes
 ADD CONSTRAINT chk_lotes_cantidad_disponible CHECK(cantidad_disponible <= cantidad_inicial);
 
 EXEC sp_helpconstraint lotes;
+
+--Restricciones tabla productos-----------------------------------------------------------------------------------------------------------------------------------------------------
+ALTER TABLE productos
+ADD CONSTRAINT pk_productos_id_producto PRIMARY KEY (id_producto);
+
+ALTER TABLE productos
+ADD CONSTRAINT fk_productos_id_c FOREIGN KEY (id_clasificacion) REFERENCES clasificaciones (id_clasificacion);
+
+ALTER TABLE productos
+ADD CONSTRAINT chk_productos_cantidad_stock CHECK (cantidad_stock >= 0);
+
+ALTER TABLE productos
+ADD CONSTRAINT chk_productos_costo_compra CHECK (costo_compra >= 0);
+
+ALTER TABLE productos
+ADD CONSTRAINT chk_productos_costo_venta CHECK (costo_venta >= 0);
+
+ALTER TABLE productos
+ADD CONSTRAINT fk_productos_id_proveedor FOREIGN KEY (id_proveedor) REFERENCES proveedores (id_proveedor);
+
+ALTER TABLE productos
+ADD CONSTRAINT fk_productos_id_lote FOREIGN KEY (id_lote) REFERENCES lotes (id_lote);
+
+EXEC sp_helpconstraint productos;
