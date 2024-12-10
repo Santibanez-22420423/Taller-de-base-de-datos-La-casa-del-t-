@@ -180,3 +180,19 @@ VALUES(2, 2, '2022-01-19');
 
 INSERT INTO trabajadores_jornadas(id_trabajador, id_jornada, fecha)
 VALUES(3, 3, '2022-01-19');
+
+--Registros de la tabla clasificaciones (classifications)----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+INSERT INTO clasificaciones(nombre, descripcion, estado, imagen)
+VALUES('Sistema circulatorio', 'También conocido como sistema cardiovascular, es el sistema responsable de transportar sangre y nutrientes a todas las células y eliminar los desechos.', 1, 'https://www.google.com/search?q=sistema+circulatorio');
+
+INSERT INTO clasificaciones(nombre, descripcion, estado, imagen)
+VALUES('Sistema cardiovascular', 'Es el sistema responsable de eliminar el dióxido de carbono y desechos, regular la temperatura corporal y mantener la presión arterial.', 1, 'https://www.google.com/search?q=sistema+cardiovascular');
+
+INSERT INTO clasificaciones(nombre, descripcion, estado, imagen)
+VALUES('Sistema nervioso', 'Es el sistema responsable de controlar y coordinar los movimientos voluntarios, registrar y procesar la información sensorial, controlar las funciones autónomas (respiración, digestión, circulación), procesar la información emocional y cognitiva.', 1, 'https://www.google.com/search?q=sistema+nervioso');
+
+INSERT INTO clasificaciones(nombre, descripcion, estado, imagen)
+VALUES('Sistema respiratorio', 'Es el sistema responsable de intercambiar oxígeno y dióxido de carbono, regular el pH sanguíneo, eliminar dióxido de carbono, proporcionar oxígeno a las células.', 1, 'https://www.google.com/search?q=sistema+respiratorio');
+
+INSERT INTO clasificaciones(nombre, descripcion, estado, imagen)
+VALUES('Sistema inmunológico', 'Es el sistema responsable de proteger al cuerpo contra patógenos, células cancerígenas, tóxinas y agentes extraños.', 1, 'https://www.google.com/search?q=sistema+inmunologico');
