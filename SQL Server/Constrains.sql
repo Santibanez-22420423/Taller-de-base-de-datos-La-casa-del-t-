@@ -77,3 +77,12 @@ ALTER TABLE compras
 ADD CONSTRAINT chk_compras_metodo_pago CHECK(metodo_pago = 'Tarjeta' OR metodo_pago = 'Efectivo' OR metodo_pago = 'Mixto')
 
 EXEC sp_helpconstraint compras;
+
+--Restricciones tabla lotes---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+ALTER TABLE lotes
+ADD CONSTRAINT pk_lotes_id_lote PRIMARY KEY (id_lote);
+
+ALTER TABLE lotes
+ADD CONSTRAINT chk_lotes_cantidad_disponible CHECK(cantidad_disponible <= cantidad_inicial);
+
+EXEC sp_helpconstraint lotes;
