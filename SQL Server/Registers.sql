@@ -329,3 +329,52 @@ VALUES('LT-59038', '42', '21', '1', '2022-11-01', '2022-11-10', '2027-11-01', '4
 
 INSERT INTO lotes(numero_lote, cantidad_inicial, cantidad_disponible, estado, fecha_produccion, fecha_entrada, fecha_caducidad, id_proveedor) 
 VALUES('LT-74192', '10', '5', '1', '2022-11-15', '2022-11-25', '2027-11-15', '5');
+
+--Registros de la tabla productos------------------------------------------------------------------------------------------------------------------------------------------------
+insert into productos (nombre, descripcion, costo_compra, porcentaje_ganancia, costo_venta, cantidad_stock, id_clasificacion, estado, id_lote, id_proveedor)
+values('Castaño de indias', '60 cápsulas de 650mg', '46.00', '10', '50.6', '15', '1', '1', '1', '1' );
+
+insert into productos (nombre, descripcion, costo_compra, porcentaje_ganancia, costo_venta, cantidad_stock, id_clasificacion, estado, id_lote, id_proveedor)
+values('No varis', '60 cápsulas de 500mg', '89.00', '12', '99.68', '5', '1', '1', '2', '2' );
+
+insert into productos (nombre, descripcion, costo_compra, porcentaje_ganancia, costo_venta, cantidad_stock, id_clasificacion, estado, id_lote, id_proveedor)
+values('Hemorrostop', '120 cápsulas de 450mg', '138.00', '15', '158.7', '16', '1', '1', '3', '3' );
+
+insert into productos (nombre, descripcion, costo_compra, porcentaje_ganancia, costo_venta, cantidad_stock, id_clasificacion, estado, id_lote, id_proveedor)
+values('Varisalud', '60 tabletas de 500mg', '95.00', '10', '104.5', '0', '1', '0', '4', '4' );
+
+insert into productos (nombre, descripcion, costo_compra, porcentaje_ganancia, costo_venta, cantidad_stock, id_clasificacion, estado, id_lote, id_proveedor)
+values('Ajo negro', '50 cápsulas de 400mg', '76.00', '12', '85.12', '5', '2', '1', '5', '5' );
+
+insert into productos (nombre, descripcion, costo_compra, porcentaje_ganancia, costo_venta, cantidad_stock, id_clasificacion, estado, id_lote, id_proveedor)
+values('Hierba del sapo', '50 tabletas de 400mg', '85.00', '15', '95.2', '23', '2', '1', '6', '1' );
+
+insert into productos (nombre, descripcion, costo_compra, porcentaje_ganancia, costo_venta, cantidad_stock, id_clasificacion, estado, id_lote, id_proveedor)
+values('Omega 3 Alaska', '100 cápsulas de 1000mg', '250.00', '15', '287.5', '17', '2', '1', '7', '2' );
+
+insert into productos (nombre, descripcion, costo_compra, porcentaje_ganancia, costo_venta, cantidad_stock, id_clasificacion, estado, id_lote, id_proveedor)
+values('Omega 3 premium', '60 cápsulas de 2150mg', '270.00', '10', '297', '5', '2', '1', '8', '3' );
+
+insert into productos (nombre, descripcion, costo_compra, porcentaje_ganancia, costo_venta, cantidad_stock, id_clasificacion, estado, id_lote, id_proveedor)
+values('Neo San Juan', '100 cápsulas de 400mg', '85', '12', '95.2', '0', '3', '1', '9', '4' );
+
+insert into productos (nombre, descripcion, costo_compra, porcentaje_ganancia, costo_venta, cantidad_stock, id_clasificacion, estado, id_lote, id_proveedor)
+values('Espinoforte', '30 cápsulas de 450mg', '85.00', '15', '95.2', '10', '3', '1', '10', '5' );
+
+insert into productos (nombre, descripcion, costo_compra, porcentaje_ganancia, costo_venta, cantidad_stock, id_clasificacion, estado, id_lote, id_proveedor)
+values('Taflavix', '40 cápsulas', '103.00', '10', '116.00', '8', '3', '1', '11', '1' );
+
+insert into productos (nombre, descripcion, costo_compra, porcentaje_ganancia, costo_venta, cantidad_stock, id_clasificacion, estado, id_lote, id_proveedor)
+values('Valeriana', '50 cápsulas de 450mg', '53.00', '12', '56.36', '20', '3', '1', '12', '2' );
+
+insert into productos (nombre, descripcion, costo_compra, porcentaje_ganancia, costo_venta, cantidad_stock, id_clasificacion, estado, id_lote, id_proveedor)
+values('Vitabronc', '30 cápsulas de 450mg', '58.00', '15', '66.7', '10', '4', '1', '13', '3' );
+
+insert into productos (nombre, descripcion, costo_compra, porcentaje_ganancia, costo_venta, cantidad_stock, id_clasificacion, estado, id_lote, id_proveedor)
+values('Abango', '220 ml', '76.00', '10', '83.6', '17', '4', '1', '14', '4' );
+
+insert into productos (nombre, descripcion, costo_compra, porcentaje_ganancia, costo_venta, cantidad_stock, id_clasificacion, estado, id_lote, id_proveedor)
+values('Guayacol', '30 cápsulas de 650mg', '80.00', '12', '89.6', '20', '4', '1', '15', '5' );
+
+insert into productos (nombre, descripcion, costo_compra, porcentaje_ganancia, costo_venta, cantidad_stock, id_clasificacion, estado, id_lote, id_proveedor)
+values('Eucamiel', '70 ml', '74.00', '15', '85.1', '20', '4', '1', '16', '1' );
