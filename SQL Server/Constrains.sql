@@ -65,3 +65,15 @@ ALTER TABLE clasificaciones
 ADD CONSTRAINT pk_clasificaciones_id_clasificacion PRIMARY KEY (id_clasificacion);
 
 EXEC sp_helpconstraint clasificaciones;
+
+--Restricciones tabla compras --------------------------------------------------------------------------------------------------------------------------------------------------
+ALTER TABLE compras
+ADD CONSTRAINT pk_compras_id_compra PRIMARY KEY (id_compra);
+
+ALTER TABLE compras
+ADD CONSTRAINT fk_compras_id_proveedor FOREIGN KEY (id_proveedor) REFERENCES proveedores(id_proveedor);
+
+ALTER TABLE compras
+ADD CONSTRAINT chk_compras_metodo_pago CHECK(metodo_pago = 'Tarjeta' OR metodo_pago = 'Efectivo' OR metodo_pago = 'Mixto')
+
+EXEC sp_helpconstraint compras;
