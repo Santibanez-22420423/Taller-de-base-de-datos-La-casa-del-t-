@@ -47,3 +47,15 @@ ALTER TABLE jornadas
 ADD CONSTRAINT chk_jornadas_tipo CHECK(tipo = 'Matutino' OR tipo = 'Vespertino' OR tipo = 'Tiempo completo' OR tipo = 'Mixto');
 
 EXEC sp_helpconstraint jornadas;
+
+--Restricciones de la tabla trabajadores-jornadas (workers-days)------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+ALTER TABLE trabajadores_jornadas
+ADD CONSTRAINT pk_trabajadores_jornadas_id_trabajador_jornada PRIMARY KEY (id_trabajador_jornada);
+
+ALTER TABLE trabajadores_jornadas
+ADD CONSTRAINT fk_trabajadores_jornadas_id_trabajador FOREIGN KEY (id_trabajador) REFERENCES trabajadores (id_trabajador);
+
+ALTER TABLE trabajadores_jornadas
+ADD CONSTRAINT fk_trabajadores_jornadas_id_jornada FOREIGN KEY (id_jornada) REFERENCES jornadas (id_jornada);
+
+EXEC sp_helpconstraint trabajadores_jornadas;
