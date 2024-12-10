@@ -170,3 +170,21 @@ alter table productos_ventas
 add constraint chk_productos_ventas_cantidad check (cantidad >= 0);
 
 exec sp_helpconstraint productos_ventas;
+
+--Restricciones tabla devoluciones_compras------------------------------------------------------------------------------------------------------------------------------------------------------------
+alter table devoluciones_compras
+add constraint pk_devoluciones_compras_id_devolucion_compra primary key (id_devolucion_compra);
+
+alter table devoluciones_compras
+add constraint fk_devoluciones_compras_id_compra foreign key (id_compra) references compras (id_compra);
+
+alter table devoluciones_compras
+add constraint fk_devoluciones_compras_id_producto foreign key (id_producto) references productos (id_producto);
+
+alter table devoluciones_compras
+add constraint chk_devoluciones_compras_cantidad check (cantidad >= 0);
+
+alter table devoluciones_compras
+add constraint chk_devoluciones_compras_estado check(estado = 'Pendiente' OR estado = 'Completado' OR estado = 'Rechazado')
+
+exec sp_helpconstraint devoluciones_compras;
