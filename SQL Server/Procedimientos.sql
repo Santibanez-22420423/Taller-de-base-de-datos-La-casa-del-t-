@@ -1,7 +1,7 @@
 -------------------------------------------------------
                 --Procedimientos--
 -------------------------------------------------------
-
+DROP PROCE
 --1 Procedimiento para realizar una compra.
     --1.1 Realizar la orden de la compra.
     CREATE PROCEDURE realizar_compra 
@@ -92,7 +92,7 @@
         PRINT 'No se pudo realizar la compra. Verifica los datos.';
 
     --Este punto se ejecuta con tantos productos que correspondan a la compra que se realiza para esa orden.
-    EXEC insertar_detalles_productos_compras @id_compra_1 = 22, @id_producto = 18, @cantidad = 2, @unitario = 89.0;
+    EXEC insertar_detalles_productos_compras @id_compra_1 = 21, @id_producto = 15, @cantidad = 2, @unitario = 89.0;
 
     SELECT * FROM compras;
     SELECT * FROM productos_compras;
@@ -100,6 +100,7 @@
 
 SELECT * FROM devoluciones_compras
 
+-------------------------------------------------------------------------------------------------------------------------------------------------------------------
 --2 Procedimiento para realizar una devolución sobre compra.
 CREATE PROCEDURE insertar_devolucion_compras 
     @id_compra NUMERIC,
@@ -138,8 +139,9 @@ BEGIN
 	END
     END;
 
-EXEC  insertar_devolucion_compras @id_compra  = 22, @id_producto = 18, @cantidad = 1;
-
+EXEC  insertar_devolucion_compras @id_compra  = 21, @id_producto = 15, @cantidad = 1;
+SELECT * FROM clientes;
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------
 --3 Simulación del carrito de los clientes.
     --Tabla carrito
     create table carritos(
@@ -166,11 +168,11 @@ EXEC  insertar_devolucion_compras @id_compra  = 22, @id_producto = 18, @cantidad
         from inserted i;
 
         -- Obtener el precio actual del producto
-        select @unitario = precio
+        select @unitario = costo_venta
         from productos
         where id_producto = @id_producto;
 
-        select @desc_porcentaje = descuento
+        select @desc_porcentaje = descuento_preferencial
         from clientes
         where id_cliente = @id_cliente;
 
@@ -196,16 +198,21 @@ EXEC  insertar_devolucion_compras @id_compra  = 22, @id_producto = 18, @cantidad
     select * from productos
     select * from carritos
 
+	DELETE FROM  carritos WHERE id_carrito = 2;
     insert into carritos (id_cliente, id_producto, cantidad)
     values (1, 1, 1);
     insert into carritos (id_cliente, id_producto, cantidad)
-    values (1, 17, 1);
+    values (1, 16, 1);
     insert into carritos (id_cliente, id_producto, cantidad)
-    values (1, 15, 5);
+    values (1, 15, 2);
 
 ------------------------------------------------------------------------------------------------------------------------------------------
 --4 Procedimiento para realizar una venta.
-create procedure realizar_venta @id_cliente numeric, @id_trabajador numeric, @metodo_pago nvarchar(20)
+create procedure realizar_venta 
+    @id_cliente numeric, 
+    @id_trabajador numeric, 
+    @metodo_pago nvarchar(20), 
+    @id_venta int OUTPUT
 as
 begin
 
@@ -222,7 +229,8 @@ begin
 				values (@id_cliente, @id_trabajador, getdate(), @metodo_pago);
 
 				-- Si todo está bien, confirmar la transacción
-				commit transaction;
+				SET @id_venta = SCOPE_IDENTITY();
+                commit transaction;
 				print 'Orden de venta creada exitosamente.';
 			end try
 			begin catch
@@ -277,3 +285,26 @@ begin
 	end;
 
 	exec sp_insertar_productos_ventas @id_venta = 16, @id_cliente = 1;
+
+	CREATE or ALTER PROCEDURE venta_completa(@id_cliente NUMERIC, @id_trabajador NUMERIC, @metodo_pago NVARCHAR(20))
+	AS
+	DECLARE
+		@id_venta INT,
+		@aux INT;
+	BEGIN
+		--Generar la orden del cliente.
+		EXEC realizar_venta @id_cliente = @id_cliente, @id_trabajador = @id_trabajador, @metodo_pago = @metodo_pago, @id_venta = @id_venta OUTPUT;
+		SET @aux = (SELECT COUNT(*) FROM carritos WHERE id_cliente = @id_cliente);
+		WHILE(@aux > 0)
+		BEGIN
+			EXEC sp_insertar_productos_ventas @id_venta, @id_cliente;
+			SET @aux = @aux - 1;
+		END
+	END;
+
+EXEC venta_completa @id_cliente = 1, @id_trabajador = 2, @metodo_pago = 'Efectivo';
+
+select * from carritos
+select * from ventas
+select * from productos
+select * from productos_ventas
