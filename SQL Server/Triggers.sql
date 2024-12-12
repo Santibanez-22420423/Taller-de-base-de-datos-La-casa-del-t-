@@ -43,26 +43,43 @@ END;
 
 --Trigger tabla productos_ventas--------------------------------------------------------------------------------------------------------------------------------------
  -- Verificar que exista la cantidad de productos a vender.
+ SELECT * FROM productos
+ DROP TRIGGER trg_existencia_para_ventas
+create trigger trg_existencia_para_ventas
+on productos_ventas
+instead of insert
+as
+begin  
+    declare @id_producto integer, @cantidad integer, @existencia integer;
 
-CREATE TRIGGER trg_existencia_para_ventas
-ON productos_ventas
-AFTER INSERT, UPDATE
-AS
-BEGIN
-    DECLARE @id_producto INT;
+    -- Obtener el id_producto y la cantidad de la tabla inserted que son los datos de productos_ventas.
+    select @id_producto = i.id_producto, @cantidad = i.cantidad
+    from inserted i;
 
-    -- Obtener el id_producto de la tabla inserted
-    SELECT @id_producto = i.id_producto
-    FROM inserted i;
+    -- Obtener la existencia actual del producto.
+    select @existencia = cantidad_stock
+    from productos
+    where id_producto = @id_producto;
 
-    -- Actualizar cantidad_stock en productos después de la venta
-    UPDATE p
-    SET p.cantidad_stock = p.cantidad_stock - pv.cantidad
-    FROM productos_ventas pv
-    INNER JOIN productos p
-    ON p.id_producto = pv.id_producto
-    WHERE pv.id_producto = @id_producto;
-END;
+    -- Verificar si hay suficiente existencia.
+    if @cantidad <= @existencia
+    begin
+        -- Si hay suficiente existencia, realizar la inserción.
+        insert into productos_ventas ( id_producto, id_venta, cantidad, unitario)
+        select id_producto, id_venta, cantidad, unitario
+        from inserted;
+
+        -- Actualizar la existencia del producto.
+        update productos
+        set cantidad_stock = cantidad_stock - @cantidad
+        where id_producto = @id_producto;
+    end
+    else
+    begin
+        -- Si no hay suficiente existencia, lanzar un error.
+        raiserror('No es posible realizar la venta: cantidad solicitada excede la existencia.', 16, 1);
+    end
+end;
 
 
 -- Pasar el valor de precio de la tabla productos asignándolo a el atributo unitario de la tabla productos_ventas.
